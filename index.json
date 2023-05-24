@@ -3846,24 +3846,6 @@
       "priority": 10000
     },
     {
-      "fullPath": "presets/4.4/rc_link/mots.txt",
-      "hash": "35f5fcdc83b5db28a0c4f2d1f533a18c2d278eb9714207cc67e8d4c795ed5c84",
-      "title": "ELRS mots",
-      "firmware_version": [
-        "4.4"
-      ],
-      "category": "RC_LINK",
-      "status": "COMMUNITY",
-      "keywords": [
-        "defaults",
-        "reset",
-        "rc link",
-        "rc_link"
-      ],
-      "author": "mots",
-      "priority": 10000000000
-    },
-    {
       "fullPath": "presets/4.4/rc_link/reset_to_defaults.txt",
       "hash": "fe6be880bb051e1294253d2f583def5c9ad8c540d3463540ec9b80fa2a5d775a",
       "title": "Reset ALL RC link related settings",
