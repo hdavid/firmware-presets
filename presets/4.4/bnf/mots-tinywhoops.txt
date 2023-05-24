@@ -64,7 +64,7 @@ set dshot_bidir = ON
 set dshot_bitbang = AUTO
 set motor_pwm_protocol = DSHOT300
 set motor_poles = 12
-set beeper_dshot_beacon_tone = 3
+#set beeper_dshot_beacon_tone = 3
 
 
 # Battery
