@@ -360,7 +360,6 @@
       "meteor",
       "MinChan",
       "MM",
-      "Mobula 1S ELRS",
       "Mobula 2S ELRS",
       "mode",
       "modes",
@@ -381,6 +380,7 @@
       "O3",
       "O3 air unit",
       "Omni",
+      "openlager",
       "OpenRacer",
       "OpenVTx",
       "OSD",
@@ -3626,14 +3626,14 @@
       "priority": 1000000
     },
     {
-      "fullPath": "presets/4.4/bnf/Mobucan7-2S.txt",
-      "hash": "aa528d41bfa27b90d00ff925ccf8f504d9991e16447a637c2bbfbb89306e02ad",
-      "title": "Mobula7 2S",
+      "fullPath": "presets/4.4/bnf/hri-tinywhoops.txt",
+      "hash": "3fb255ec991b709600cf9b789f6284aaa0f4974b51b06868c0ba046e9fd49a6b",
+      "title": "mots TinyWhoops",
       "firmware_version": [
         "4.4"
       ],
       "category": "BNF",
-      "status": "EXPERIMENTAL",
+      "status": "COMMUNITY",
       "keywords": [
         "Mobula 2S ELRS"
       ],
@@ -3642,19 +3642,18 @@
       "priority": 0
     },
     {
-      "fullPath": "presets/4.4/bnf/Mobula7-1S-HRI.txt",
-      "hash": "3682e53a90944732441d97b77c751167fba3c6a62a548206cc40474f14d184a4",
-      "title": "Mobula7 1S",
+      "fullPath": "presets/4.4/modes/mots.txt",
+      "hash": "10ba40dbf6295c160102b9544ed6b4b41c977fe419b026e2716829e295d89d9c",
+      "title": "Modes",
       "firmware_version": [
         "4.4"
       ],
-      "category": "BNF",
-      "status": "EXPERIMENTAL",
+      "category": "OSD",
+      "status": "COMMUNITY",
       "keywords": [
-        "Mobula 1S ELRS"
+        "Modes"
       ],
-      "author": "mots",
-      "force_options_review": true,
+      "author": "Mots",
       "priority": 0
     },
     {
@@ -3689,6 +3688,21 @@
         "OSD"
       ],
       "author": "Betaflight",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.4/osd/mots.txt",
+      "hash": "a445b5eac2b9263c13803cdce3aad82b97795c914a01fb0d6422f44a4242a8ff",
+      "title": "Mots OSD settings",
+      "firmware_version": [
+        "4.4"
+      ],
+      "category": "OSD",
+      "status": "COMMUNITY",
+      "keywords": [
+        "OSD"
+      ],
+      "author": "Mots",
       "priority": 0
     },
     {
@@ -3772,6 +3786,22 @@
       ],
       "author": "Daniel Appel / Tehllama",
       "force_options_review": true,
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.4/other/mots-blackbox.txt",
+      "hash": "8e744a1587864c2cf9ef64eea388159a47c7100bd42cf36194d452e98eab88ea",
+      "title": "BlackBox settings for OpenLager + X12",
+      "firmware_version": [
+        "4.4"
+      ],
+      "category": "OTHER",
+      "status": "COMMUNITY",
+      "keywords": [
+        "blackbox",
+        "openlager"
+      ],
+      "author": "mots",
       "priority": 0
     },
     {
@@ -4107,6 +4137,42 @@
         "multigp"
       ],
       "author": "MinChan Kim",
+      "priority": 1000000000000
+    },
+    {
+      "fullPath": "presets/4.4/tune/mots-mobula7-1s.txt",
+      "hash": "c8e87f7adb22c99c8c50a1582ca016cc377bca3fe3736b147a00225dcea20182",
+      "title": "Mobula7 1s",
+      "firmware_version": [
+        "4.4"
+      ],
+      "category": "TUNE",
+      "status": "COMMUNITY",
+      "keywords": [
+        "tune",
+        "pid",
+        "default",
+        "filters"
+      ],
+      "author": "Mots",
+      "priority": 1000000000000
+    },
+    {
+      "fullPath": "presets/4.4/tune/mots-mobula7-2s.txt",
+      "hash": "d7028113fe7d71b30dfe35afe079ac2f5bef61d2244fcc5dc17a470b37fd3f0c",
+      "title": "Mobula7 2s",
+      "firmware_version": [
+        "4.4"
+      ],
+      "category": "TUNE",
+      "status": "COMMUNITY",
+      "keywords": [
+        "tune",
+        "pid",
+        "default",
+        "filters"
+      ],
+      "author": "Mots",
       "priority": 1000000000000
     },
     {
@@ -4643,6 +4709,22 @@
         "MSP VTX"
       ],
       "author": "sugarK",
+      "priority": 1000000
+    },
+    {
+      "fullPath": "presets/4.4/vtx/mots.txt",
+      "hash": "d4df2d63f91ee075636e2e45e11969cf0b48018066f3d97ccf658b341cd3abdc",
+      "title": "Analog VTX HAMO X12",
+      "firmware_version": [
+        "4.4"
+      ],
+      "category": "VTX",
+      "status": "COMMUNITY",
+      "keywords": [
+        "vtx",
+        "vtx table"
+      ],
+      "author": "mots",
       "priority": 1000000
     }
   ]

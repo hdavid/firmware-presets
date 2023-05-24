@@ -1,0 +1,165 @@
+#$ TITLE:  Mobula7 2s
+#$ FIRMWARE_VERSION: 4.4
+#$ CATEGORY: TUNE
+#$ STATUS: COMMUNITY
+#$ KEYWORDS: tune, pid, default, filters
+#$ AUTHOR: Mots
+
+#$ DESCRIPTION: Mobula7 2s. trashcan frame, 1102 13500kv, gemfan 40mm quad. 
+#$ DESCRIPTION: 3 rate profiles to tame down throttle.
+#$ DESCRIPTION: rates 1 for beginners
+#$ DESCRIPTION: rates 2 for indoor 
+#$ DESCRIPTION: rates 3 for outdoors
+#$ DESCRIPTION: 3 Profiles: relax, normal, tight.
+
+
+#$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/291
+
+#$ INCLUDE: presets/4.4/tune/defaults.txt
+#$ INCLUDE: presets/4.3/filters/defaults.txt
+
+
+
+# Filters
+set pid_process_denom = 1
+set simplified_gyro_filter = OFF
+
+set gyro_lpf1_static_hz = 0
+set gyro_lpf2_static_hz = 0
+set gyro_lpf1_dyn_min_hz = 0
+set gyro_lpf1_dyn_max_hz = 0
+
+set rpm_filter_harmonics = 1
+
+set dyn_notch_count = 3
+set dyn_notch_q = 500
+
+set dyn_notch_min_hz = 120
+set dyn_notch_max_hz = 500
+
+
+
+profile 0
+set profile_name = relax
+
+set simplified_dterm_filter = OFF
+set dterm_lpf1_type = BIQUAD
+set dterm_lpf1_dyn_min_hz = 0
+set dterm_lpf1_dyn_max_hz = 0
+set dterm_lpf1_static_hz = 110
+set dterm_lpf2_static_hz = 0
+set yaw_lowpass_hz = 0
+
+#4.5
+set angle_p_gain = 40
+set angle_limit = 45
+#4.4
+set angle_level_strength = 40
+set level_limit = 45
+
+
+profile 1
+set profile_name = normal
+
+set simplified_dterm_filter = OFF
+set dterm_lpf1_type = BIQUAD
+set dterm_lpf1_dyn_min_hz = 0
+set dterm_lpf1_dyn_max_hz = 0
+set dterm_lpf1_static_hz = 110
+set dterm_lpf2_static_hz = 0
+set yaw_lowpass_hz = 0
+
+
+#4.5
+set angle_p_gain = 75
+set angle_limit = 60
+#4.4
+set angle_level_strength = 75
+set level_limit = 60
+
+set p_pitch = 54
+set i_pitch = 96
+set d_pitch = 60
+set f_pitch = 143
+set p_roll = 51
+set i_roll = 92
+set d_roll = 52
+set f_roll = 138
+set p_yaw = 51
+set i_yaw = 92
+set f_yaw = 138
+set d_min_roll = 39
+set d_min_pitch = 44
+
+set simplified_master_multiplier = 115
+set simplified_d_gain = 115
+
+profile 2
+set profile_name = tight
+
+set simplified_dterm_filter = OFF
+set dterm_lpf1_type = BIQUAD
+set dterm_lpf1_dyn_min_hz = 0
+set dterm_lpf1_dyn_max_hz = 0
+set dterm_lpf1_static_hz = 110
+set dterm_lpf2_static_hz = 0
+set yaw_lowpass_hz = 0
+
+#4.5
+set angle_p_gain = 100
+set angle_limit = 60
+#4.4
+set angle_level_strength = 100
+set level_limit = 60
+set horizon_level_strength = 100
+
+set p_pitch = 70
+set i_pitch = 126
+set d_pitch = 89
+set f_pitch = 187
+set p_roll = 67
+set i_roll = 120
+set d_roll = 78
+set f_roll = 180
+set p_yaw = 67
+set i_yaw = 120
+set f_yaw = 180
+set level_limit = 60
+set d_min_roll = 58
+set d_min_pitch = 66
+
+set simplified_master_multiplier = 150
+set simplified_d_gain = 130
+
+
+profile 3
+set profile_name = unused
+
+# restore original profile selection
+profile 2
+
+rateprofile 0
+set rateprofile_name = 60%
+set thr_expo = 60
+set throttle_limit_type = SCALE
+set throttle_limit_percent = 60
+
+rateprofile 1
+set rateprofile_name = 80%
+set thr_mid = 40
+set thr_expo = 60
+set throttle_limit_type = SCALE
+set throttle_limit_percent = 80
+
+rateprofile 2
+set rateprofile_name = full
+set thr_mid = 35
+set thr_expo = 60
+set throttle_limit_type = SCALE
+set throttle_limit_percent = 100
+
+rateprofile 3
+set rateprofile_name = unused
+
+# restore original rateprofile selection
+rateprofile 1

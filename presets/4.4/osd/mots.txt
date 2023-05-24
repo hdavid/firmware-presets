@@ -1,0 +1,53 @@
+#$ TITLE: Mots OSD settings
+#$ FIRMWARE_VERSION: 4.4
+#$ CATEGORY: OSD
+#$ STATUS: COMMUNITY
+#$ KEYWORDS:  OSD
+#$ AUTHOR: Mots
+#$ DESCRIPTION: OSD with three flavours: minimal, normal, debug
+
+
+feature OSD
+set osd_cap_alarm = 550
+set osd_rssi_pos = 8243
+set osd_link_quality_pos = 12374
+set osd_link_tx_power_pos = 12406
+set osd_rssi_dbm_pos = 8342
+set osd_rsnr_pos = 14391
+set osd_tim_1_pos = 150
+set osd_tim_2_pos = 14742
+set osd_remaining_time_estimate_pos = 375
+set osd_flymode_pos = 12321
+set osd_anti_gravity_pos = 104
+set osd_g_force_pos = 8568
+set osd_throttle_pos = 8289
+set osd_vtx_channel_pos = 8553
+set osd_current_pos = 8512
+set osd_mah_drawn_pos = 8546
+set osd_motor_diag_pos = 8321
+set osd_pid_roll_pos = 102
+set osd_pid_pitch_pos = 70
+set osd_pid_yaw_pos = 134
+set osd_debug_pos = 1
+set osd_power_pos = 8482
+set osd_pidrate_profile_pos = 46
+set osd_warnings_pos = 14632
+set osd_avg_cell_voltage_pos = 14721
+set osd_pit_ang_pos = 71
+set osd_rol_ang_pos = 78
+set osd_battery_usage_pos = 105
+set osd_disarmed_pos = 12554
+set osd_esc_tmp_pos = 313
+set osd_esc_rpm_pos = 8353
+set osd_esc_rpm_freq_pos = 215
+set osd_rtc_date_time_pos = 7
+set osd_flip_arrow_pos = 14542
+set osd_core_temp_pos = 12681
+set osd_log_status_pos = 12689
+set osd_stick_overlay_left_pos = 70
+set osd_stick_overlay_right_pos = 79
+set osd_rate_profile_name_pos = 12334
+set osd_pid_profile_name_pos = 12327
+set osd_stat_bitmask = 25167268
+set osd_profile = 2
+set osd_canvas_height = 13
