@@ -6,7 +6,6 @@
 #$ AUTHOR: mots
 #$ DESCRIPTION: BlackBox settings for OpenLager connected on serial 3 on hamo X12 FC
 
-#$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/307
 serial 0 128 115200 57600 0 2000000
 set debug_mode = GYRO_SCALED
 set blackbox_sample_rate = 1/1

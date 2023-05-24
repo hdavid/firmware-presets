@@ -3627,7 +3627,7 @@
     },
     {
       "fullPath": "presets/4.4/bnf/mots-tinywhoops.txt",
-      "hash": "5ab9a3a157cca86d366edd30f735a02061da262a6a780ce47480405ccb418450",
+      "hash": "0ba0292dc168c0095eef0806c64a13fa516d6a9358f1473c01ff252ccd956963",
       "title": "mots TinyWhoops",
       "firmware_version": [
         "4.4"
@@ -3790,7 +3790,7 @@
     },
     {
       "fullPath": "presets/4.4/other/mots-blackbox.txt",
-      "hash": "6d97ee6c92b0b39de1b5be50f591b27b415c14d869ab208313fd0095f43832e8",
+      "hash": "fd64dd6c22e530e091f2e737c99befc082dcd0853811e54aca75dc147924e994",
       "title": "BlackBox settings for OpenLager + X12",
       "firmware_version": [
         "4.4"
@@ -4141,7 +4141,7 @@
     },
     {
       "fullPath": "presets/4.4/tune/mots-mobula7-1s.txt",
-      "hash": "43fe997f16245b5e1a866a4c4ecbc90f2950629a1261b0c90f189a6fd77f37ce",
+      "hash": "dbbfed756f3c912cd6fad9ba3b3016759ffcf492d2831d625a443914195b497b",
       "title": "Mobula7 1s",
       "firmware_version": [
         "4.4"
@@ -4159,7 +4159,7 @@
     },
     {
       "fullPath": "presets/4.4/tune/mots-mobula7-2s.txt",
-      "hash": "5eee6a8ab01e041f74599970bd9235ef01b882557dd77b9db0ff4bcb469c2020",
+      "hash": "d96aa81e66bf08389d1d607219a54be9ff36f3ff2f8492e3d84f4ec373680de6",
       "title": "Mobula7 2s",
       "firmware_version": [
         "4.4"

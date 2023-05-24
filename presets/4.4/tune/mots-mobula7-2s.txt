@@ -15,10 +15,6 @@
 
 #$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/291
 
-#$ INCLUDE: presets/4.4/tune/defaults.txt
-#$ INCLUDE: presets/4.3/filters/defaults.txt
-
-
 
 # Filters
 set pid_process_denom = 1

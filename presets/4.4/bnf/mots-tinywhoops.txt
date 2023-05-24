@@ -79,6 +79,7 @@ set report_cell_voltage = ON
 #$ OPTION_GROUP BEGIN: Aircraft
     #$ OPTION BEGIN (CHECKED): Mobula7 2S
         set craft_name = Mobula 2S
+        set pilot_name = mots
         
         #$ INCLUDE: presets/4.4/tune/mots-mobula7-2s.txt
         
@@ -92,12 +93,14 @@ set report_cell_voltage = ON
     
     #$ OPTION BEGIN (UNCHECKED): Mobula7 1S
         set craft_name = Mobula7 1S
+        set pilot_name = mots
         
         #$ INCLUDE: presets/4.4/tune/mots-mobula7-1s.txt
         
         #ECM GYRO
         set gyro_1_sensor_align = CW90
         set gyro_1_align_yaw = 900
+        set pid_process_denom = 2
         
         set acc_calibration = -38,70,17,1
 
