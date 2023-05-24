@@ -85,10 +85,12 @@ set report_cell_voltage = ON
         
         #BMI GYRO
         set gyro_1_sensor_align = DEFAULT
-        #set gyro_1_sensor_align = CW0
         set pid_process_denom = 1
         
         set acc_calibration = -105,16,10,1
+        
+        # default value 550
+        set dshot_idle_value = 550
         
     #$ OPTION END
     
