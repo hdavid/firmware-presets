@@ -3626,7 +3626,7 @@
       "priority": 1000000
     },
     {
-      "fullPath": "presets/4.4/bnf/hri-tinywhoops.txt",
+      "fullPath": "presets/4.4/bnf/mots-tinywhoops.txt",
       "hash": "5ab9a3a157cca86d366edd30f735a02061da262a6a780ce47480405ccb418450",
       "title": "mots TinyWhoops",
       "firmware_version": [
