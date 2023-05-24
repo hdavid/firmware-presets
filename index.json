@@ -3627,7 +3627,7 @@
     },
     {
       "fullPath": "presets/4.4/bnf/hri-tinywhoops.txt",
-      "hash": "70bd7acab91010f6dbc3ada7e09175b2a48ef6ae86b804c19d14db0de91729d4",
+      "hash": "5ab9a3a157cca86d366edd30f735a02061da262a6a780ce47480405ccb418450",
       "title": "mots TinyWhoops",
       "firmware_version": [
         "4.4"
@@ -3847,7 +3847,7 @@
     },
     {
       "fullPath": "presets/4.4/rc_link/mots.txt",
-      "hash": "43f44dd6b4e4dce45f468a7e291bd0a6d995f0884f8c81986ed58c22b7bf579e",
+      "hash": "35f5fcdc83b5db28a0c4f2d1f533a18c2d278eb9714207cc67e8d4c795ed5c84",
       "title": "ELRS mots",
       "firmware_version": [
         "4.4"
