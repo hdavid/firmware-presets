@@ -4149,7 +4149,7 @@
     },
     {
       "fullPath": "presets/4.4/tune/mots-mobula7-1s.txt",
-      "hash": "e6f4c4b4239405d32e49854af0a252199f71017347a04327f7996bae4a191565",
+      "hash": "603bb29d618dc330b6e21c5142ae329e4d58857e191631a10bea515e2454f729",
       "title": "Mobula7 1s",
       "firmware_version": [
         "4.4"
@@ -4167,7 +4167,7 @@
     },
     {
       "fullPath": "presets/4.4/tune/mots-mobula7-2s.txt",
-      "hash": "042af95ee49541a011ecee0723bc175e0f8a5179cd061150061921f726a7524d",
+      "hash": "ace5c23cf62ee74f8cc643c686d1e33baea7330de430f2ead58cd71bb9b57899",
       "title": "Mobula7 2s",
       "firmware_version": [
         "4.4"

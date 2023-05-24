@@ -141,6 +141,3 @@ set rateprofile_name = hri
 
 rateprofile 3
 set rateprofile_name = unused
-
-# restore original rateprofile selection
-rateprofile 2
