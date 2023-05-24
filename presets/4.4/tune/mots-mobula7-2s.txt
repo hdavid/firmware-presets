@@ -3,7 +3,7 @@
 #$ CATEGORY: TUNE
 #$ STATUS: COMMUNITY
 #$ KEYWORDS: tune, pid, default, filters
-#$ AUTHOR: Mots
+#$ AUTHOR: mots
 
 #$ DESCRIPTION: Mobula7 2s. trashcan frame, 1102 13500kv, gemfan 40mm quad. 
 #$ DESCRIPTION: 3 rate profiles to tame down throttle.

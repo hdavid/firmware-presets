@@ -3,7 +3,7 @@
 #$ CATEGORY: OSD
 #$ STATUS: COMMUNITY
 #$ KEYWORDS:  OSD
-#$ AUTHOR: Mots
+#$ AUTHOR: mots
 #$ DESCRIPTION: OSD with three flavours: minimal, normal, debug
 
 

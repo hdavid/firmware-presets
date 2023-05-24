@@ -2,7 +2,7 @@
 #$ FIRMWARE_VERSION: 4.4
 #$ CATEGORY: OTHER
 #$ STATUS: COMMUNITY
-#$ KEYWORDS: blackbox, openlager,
+#$ KEYWORDS: blackbox, openlager
 #$ AUTHOR: mots
 #$ DESCRIPTION: BlackBox settings for OpenLager connected on serial 3 on hamo X12 FC
 

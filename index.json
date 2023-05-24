@@ -360,7 +360,7 @@
       "meteor",
       "MinChan",
       "MM",
-      "Mobula 2S ELRS",
+      "Mobula 2S ELRS _mots",
       "mode",
       "modes",
       "Motor",
@@ -3627,7 +3627,7 @@
     },
     {
       "fullPath": "presets/4.4/bnf/hri-tinywhoops.txt",
-      "hash": "0fa89dffa64fbd585db03c5b43138dec99114940fd6f98f7e2c997b13a1d1b10",
+      "hash": "70bd7acab91010f6dbc3ada7e09175b2a48ef6ae86b804c19d14db0de91729d4",
       "title": "mots TinyWhoops",
       "firmware_version": [
         "4.4"
@@ -3635,7 +3635,7 @@
       "category": "BNF",
       "status": "COMMUNITY",
       "keywords": [
-        "Mobula 2S ELRS"
+        "Mobula 2S ELRS _mots"
       ],
       "author": "mots",
       "force_options_review": true,
@@ -3643,7 +3643,7 @@
     },
     {
       "fullPath": "presets/4.4/modes/mots.txt",
-      "hash": "10ba40dbf6295c160102b9544ed6b4b41c977fe419b026e2716829e295d89d9c",
+      "hash": "a1993c3c9a1432ae49cc92a5b29d2edba452480192938e2f61ad99699f3ed192",
       "title": "Modes",
       "firmware_version": [
         "4.4"
@@ -3653,7 +3653,7 @@
       "keywords": [
         "Modes"
       ],
-      "author": "Mots",
+      "author": "mots",
       "priority": 0
     },
     {
@@ -3692,7 +3692,7 @@
     },
     {
       "fullPath": "presets/4.4/osd/mots.txt",
-      "hash": "a445b5eac2b9263c13803cdce3aad82b97795c914a01fb0d6422f44a4242a8ff",
+      "hash": "86fcfefa1765f0efc4f70da738f3dc76b8591de9a84f2765c76900b7f173fdce",
       "title": "Mots OSD settings",
       "firmware_version": [
         "4.4"
@@ -3702,7 +3702,7 @@
       "keywords": [
         "OSD"
       ],
-      "author": "Mots",
+      "author": "mots",
       "priority": 0
     },
     {
@@ -3790,7 +3790,7 @@
     },
     {
       "fullPath": "presets/4.4/other/mots-blackbox.txt",
-      "hash": "8e744a1587864c2cf9ef64eea388159a47c7100bd42cf36194d452e98eab88ea",
+      "hash": "6d97ee6c92b0b39de1b5be50f591b27b415c14d869ab208313fd0095f43832e8",
       "title": "BlackBox settings for OpenLager + X12",
       "firmware_version": [
         "4.4"
@@ -3844,6 +3844,24 @@
       ],
       "author": "QuadMcFly (Ryan Harrell)",
       "priority": 10000
+    },
+    {
+      "fullPath": "presets/4.4/rc_link/mots.txt",
+      "hash": "43f44dd6b4e4dce45f468a7e291bd0a6d995f0884f8c81986ed58c22b7bf579e",
+      "title": "ELRS mots",
+      "firmware_version": [
+        "4.4"
+      ],
+      "category": "RC_LINK",
+      "status": "COMMUNITY",
+      "keywords": [
+        "defaults",
+        "reset",
+        "rc link",
+        "rc_link"
+      ],
+      "author": "mots",
+      "priority": 10000000000
     },
     {
       "fullPath": "presets/4.4/rc_link/reset_to_defaults.txt",
@@ -4141,7 +4159,7 @@
     },
     {
       "fullPath": "presets/4.4/tune/mots-mobula7-1s.txt",
-      "hash": "85c9cfe8ac5fd0322829df2182f033cd4e2e261af19daab58e01a1d60770d721",
+      "hash": "43fe997f16245b5e1a866a4c4ecbc90f2950629a1261b0c90f189a6fd77f37ce",
       "title": "Mobula7 1s",
       "firmware_version": [
         "4.4"
@@ -4154,12 +4172,12 @@
         "default",
         "filters"
       ],
-      "author": "Mots",
+      "author": "mots",
       "priority": 1000000000000
     },
     {
       "fullPath": "presets/4.4/tune/mots-mobula7-2s.txt",
-      "hash": "d7028113fe7d71b30dfe35afe079ac2f5bef61d2244fcc5dc17a470b37fd3f0c",
+      "hash": "5eee6a8ab01e041f74599970bd9235ef01b882557dd77b9db0ff4bcb469c2020",
       "title": "Mobula7 2s",
       "firmware_version": [
         "4.4"
@@ -4172,7 +4190,7 @@
         "default",
         "filters"
       ],
-      "author": "Mots",
+      "author": "mots",
       "priority": 1000000000000
     },
     {

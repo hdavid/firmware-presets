@@ -2,7 +2,7 @@
 #$ FIRMWARE_VERSION: 4.4
 #$ CATEGORY: BNF
 #$ STATUS: COMMUNITY
-#$ KEYWORDS: Mobula 2S ELRS
+#$ KEYWORDS: Mobula 2S ELRS _mots
 #$ AUTHOR: mots
 #$ DISCUSSION: https://github.com/hdavid/firmware-presets
 #$ DESCRIPTION:  Mobula7 1S / Trashcan 2S
@@ -11,7 +11,6 @@
 
 defaults nosave
 batch start
-
 
 # Modes
 #$ INCLUDE: presets/4.4/modes/mots.txt
@@ -25,37 +24,11 @@ batch start
 # OSD
 #$ INCLUDE: presets/4.4/osd/mots.txt
 
+# RC Link
+#$ INCLUDE: presets/4.4/rc_link/mots.txt
+
 # Gyro & Acc
 set small_angle = 180
-
-# RC
-#$ OPTION_GROUP BEGIN: Receiver
-    #$ OPTION BEGIN (CHECKED): SPI ELRS
-        resource RX_SPI_BIND 1 B02
-        feature RX_SPI
-        feature -RX_SERIAL
-        beacon RX_LOST
-        beacon RX_SET
-        set min_check = 1000
-        set max_check = 2000
-        set rc_smoothing_auto_factor = 45
-    #$ OPTION END
-    #$ OPTION BEGIN (CHECKED): SPI ELRS 500hz
-        set expresslrs_rate_index = 0
-        # Allowed range: 0 – 4
-        # Default value: 0
-        # 0=500Hz,1=250Hz,2=150Hz,3=50Hz,4=25Hz
-    #$ OPTION END
-    #$ OPTION BEGIN (UNCHECKED): SPI ELRS 250hz
-       set expresslrs_rate_index = 1
-    #$ OPTION END
-    #$ OPTION BEGIN (UNCHECKED): SPI ELRS 150hz
-       set expresslrs_rate_index = 2
-    #$ OPTION END
-    #$ OPTION BEGIN (CHECKED): ELRS Bind Phrase: Mots
-        set expresslrs_uid = 21,19,5,147,134,168
-    #$ OPTION END
-#$ OPTION_GROUP END
 
 
 # ESC

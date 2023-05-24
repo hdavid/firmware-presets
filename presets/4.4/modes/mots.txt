@@ -3,7 +3,7 @@
 #$ CATEGORY: OSD
 #$ STATUS: COMMUNITY
 #$ KEYWORDS:  Modes
-#$ AUTHOR: Mots
+#$ AUTHOR: mots
 #$ DESCRIPTION: My modes
 
 
