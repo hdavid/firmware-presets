@@ -1,0 +1,318 @@
+#$ TITLE: Mobula7 1S
+#$ FIRMWARE_VERSION: 4.4
+#$ CATEGORY: BNF
+#$ STATUS: EXPERIMENTAL
+#$ KEYWORDS: Mobula 1S ELRS
+#$ AUTHOR: mots
+#$ DISCUSSION: https://github.com/hdavid/firmware-presets
+#$ DESCRIPTION: Mobula7 1S
+#$ FORCE_OPTIONS_REVIEW: TRUE
+# Name: Mobula7 1S
+# stock tune: http://www.happymodel.cn/wp-content/uploads/2022/01/Mobula7-1S-ELRS-diff-all-for-X12-ELRS-V2.1.txt
+# shogun tune: https://pastebin.com/KDsz1v1i
+
+defaults nosave
+batch start
+
+# master
+set craft_name = Mobula7 1S
+set pilot_name = mots
+
+# beeper
+#beeper -ARMING_GPS_FIX
+#beeper -GPS_STATUS
+#beeper -CRASH_FLIP
+#beeper -READY_BEEP
+#beeper -ON_USB
+
+
+# aux
+aux 0 0 0 1600 2100 0 0
+aux 1 1 1 900 1200 0 0
+aux 2 2 1 1200 1600 0 0
+aux 3 13 2 1600 2100 0 0
+aux 4 26 7 1600 2100 0 0
+aux 5 28 3 1400 2100 0 0
+aux 6 35 4 1600 2100 0 0
+
+
+# adjrange
+adjrange 0 0 5 900 2100 12 5 0 0
+adjrange 1 0 6 900 2100 29 6 0 0
+
+
+# Gyro & Acc
+# https://oscarliang.com/drifting-problem-angle-horizon-mode-betaflight/
+#set acc_lpf_hz = 10
+set pid_process_denom = 4
+set gyro_1_sensor_align = CW90
+set gyro_1_align_yaw = 900
+#set acc_calibration = -99,-235,-1,1
+#set gyro_1_align_yaw = 0
+
+# RC
+resource RX_SPI_BIND 1 B02
+feature RX_SPI
+feature -RX_SERIAL
+beacon RX_LOST
+beacon RX_SET
+set expresslrs_rate_index = 0
+#Allowed range: 0 – 4
+#Default value: 0
+#0=500Hz,1=250Hz,2=150Hz,3=50Hz,4=25Hz
+set expresslrs_uid = 21,19,5,147,134,168
+set min_check = 1000
+set max_check = 2000
+set rc_smoothing_auto_factor = 45
+set deadband = 4
+set yaw_deadband = 4
+set small_angle = 180
+
+
+# Blackbox
+serial 0 128 115200 57600 0 2000000
+set debug_mode = GYRO_SCALED
+set blackbox_sample_rate = 1/1
+set blackbox_device = SERIAL
+
+
+# ESC
+feature -AIRMODE
+feature MOTOR_STOP
+set yaw_motors_reversed = ON
+set dshot_idle_value = 1200
+set dshot_bidir = ON
+set dshot_bitbang = AUTO
+set motor_pwm_protocol = DSHOT300
+set motor_poles = 12
+set beeper_dshot_beacon_tone = 3
+
+
+# Battery
+set bat_capacity = 550
+set vbat_max_cell_voltage = 435
+set vbat_min_cell_voltage = 290
+set vbat_warning_cell_voltage = 310
+set ibata_scale = 470
+set report_cell_voltage = ON
+
+
+# VTX
+serial 1 2048 115200 57600 0 115200
+set vtx_band = 5
+set vtx_channel = 8
+set vtx_power = 5
+set vtx_freq = 5917
+set vtx_low_power_disarm = ON
+set displayport_max7456_wht = 0
+
+# vtx table
+vtxtable bands 6
+vtxtable channels 8
+vtxtable band 1 BOSCAM_A A FACTORY 5865 5845 5825 5805 5785 5765 5745 5725
+vtxtable band 2 BOSCAM_B B FACTORY 5733 5752 5771 5790 5809 5828 5847 5866
+vtxtable band 3 BOSCAM_E E FACTORY 5705 5685 5665 5645 5885 5905 5925 5945
+vtxtable band 4 FATSHARK F FACTORY 5740 5760 5780 5800 5820 5840 5860 5880
+vtxtable band 5 RACEBAND R FACTORY 5658 5695 5732 5769 5806 5843 5880 5917
+vtxtable band 6 LOWRACE  L FACTORY 5333 5373 5413 5453 5493 5533 5573 5613
+vtxtable powerlevels 5
+vtxtable powervalues 10 2 14 20 26
+vtxtable powerlabels 0 RCE 25 100 400
+
+# OSD
+feature OSD
+set osd_cap_alarm = 550
+set osd_rssi_pos = 8243
+set osd_link_quality_pos = 12374
+set osd_link_tx_power_pos = 12406
+set osd_rssi_dbm_pos = 8342
+set osd_rsnr_pos = 14391
+set osd_tim_1_pos = 150
+set osd_tim_2_pos = 14742
+set osd_remaining_time_estimate_pos = 375
+set osd_flymode_pos = 12321
+set osd_anti_gravity_pos = 104
+set osd_g_force_pos = 8568
+set osd_throttle_pos = 8289
+set osd_vtx_channel_pos = 8553
+set osd_current_pos = 8512
+set osd_mah_drawn_pos = 8546
+set osd_motor_diag_pos = 8321
+set osd_pid_roll_pos = 102
+set osd_pid_pitch_pos = 70
+set osd_pid_yaw_pos = 134
+set osd_debug_pos = 1
+set osd_power_pos = 8482
+set osd_pidrate_profile_pos = 46
+set osd_warnings_pos = 14632
+set osd_avg_cell_voltage_pos = 14721
+set osd_pit_ang_pos = 71
+set osd_rol_ang_pos = 78
+set osd_battery_usage_pos = 105
+set osd_disarmed_pos = 12554
+set osd_esc_tmp_pos = 313
+set osd_esc_rpm_pos = 8353
+set osd_esc_rpm_freq_pos = 215
+set osd_rtc_date_time_pos = 7
+set osd_flip_arrow_pos = 14542
+set osd_core_temp_pos = 12681
+set osd_log_status_pos = 12689
+set osd_stick_overlay_left_pos = 70
+set osd_stick_overlay_right_pos = 79
+set osd_rate_profile_name_pos = 12334
+set osd_pid_profile_name_pos = 12327
+set osd_stat_bitmask = 25167268
+set osd_profile = 2
+set osd_canvas_height = 13
+
+
+# Filters
+set pid_process_denom = 1
+set simplified_gyro_filter = OFF
+
+set gyro_lpf1_static_hz = 0
+set gyro_lpf2_static_hz = 0
+#set gyro_lpf1_dyn_min_hz = 0
+#set gyro_lpf1_dyn_max_hz = 0
+
+#set rpm_filter_harmonics = 2
+
+#set dyn_notch_q = 500
+#set dyn_notch_max_hz = 300
+
+set gyro_lpf1_dyn_min_hz = 300
+set gyro_lpf1_dyn_max_hz = 550
+
+
+
+profile 0
+set profile_name = default
+
+
+profile 1
+set profile_name = stock
+
+set dterm_lpf1_static_hz = 0
+set yaw_lowpass_hz = 0
+
+set vbat_sag_compensation = 100
+set anti_gravity_gain = 4500
+set iterm_relax_cutoff = 20
+
+set feedforward_jitter_factor = 5
+set feedforward_boost = 18
+set feedforward_max_rate_limit = 95
+
+set p_pitch = 116
+set i_pitch = 135
+set d_pitch = 77
+set f_pitch = 212
+set p_roll = 123
+set i_roll = 143
+set d_roll = 80
+set f_roll = 226
+set p_yaw = 123
+set i_yaw = 143
+set f_yaw = 226
+set d_min_roll = 80
+set d_min_pitch = 77
+set d_max_advance = 0
+
+set simplified_master_multiplier = 145
+set simplified_i_gain = 65
+set simplified_d_gain = 185
+set simplified_pi_gain = 190
+set simplified_dmax_gain = 0
+set simplified_feedforward_gain = 130
+set simplified_pitch_d_gain = 85
+set simplified_pitch_pi_gain = 90
+
+
+profile 2
+set profile_name = hri
+
+set dterm_lpf1_static_hz = 0
+set yaw_lowpass_hz = 0
+
+set simplified_dterm_filter = OFF
+set dterm_lpf1_type = BIQUAD
+set dterm_lpf1_dyn_min_hz = 0
+set dterm_lpf1_dyn_max_hz = 0
+set dterm_lpf1_static_hz = 110
+set dterm_lpf2_static_hz = 0
+set yaw_lowpass_hz = 0
+
+
+set vbat_sag_compensation = 100
+#set anti_gravity_gain = 4500
+set iterm_relax_cutoff = 20
+
+set feedforward_jitter_factor = 5
+set feedforward_boost = 18
+set feedforward_max_rate_limit = 95
+
+set angle_level_strength = 100
+set horizon_level_strength = 100
+
+set p_pitch = 116
+set i_pitch = 135
+set d_pitch = 77
+set f_pitch = 212
+set p_roll = 123
+set i_roll = 143
+set d_roll = 80
+set f_roll = 226
+set p_yaw = 123
+set i_yaw = 143
+set f_yaw = 226
+set d_min_roll = 80
+set d_min_pitch = 77
+set d_max_advance = 0
+
+set simplified_master_multiplier = 145
+set simplified_i_gain = 65
+set simplified_d_gain = 185
+set simplified_pi_gain = 190
+set simplified_dmax_gain = 0
+set simplified_feedforward_gain = 130
+set simplified_pitch_d_gain = 85
+set simplified_pitch_pi_gain = 90
+
+# restore original profile selection
+profile 1
+
+
+rateprofile 0
+set rateprofile_name = default
+set thr_expo = 0
+set throttle_limit_type = SCALE
+set throttle_limit_percent = 100
+
+rateprofile 1
+set rateprofile_name = stock
+set rates_type = BETAFLIGHT
+set roll_rc_rate = 110
+set pitch_rc_rate = 110
+set yaw_rc_rate = 100
+set roll_srate = 75
+set pitch_srate = 75
+set yaw_srate = 70
+set tpa_breakpoint = 1250
+
+
+rateprofile 2
+set rateprofile_name = hri
+set thr_mid = 50
+set thr_expo = 00
+set throttle_limit_type = SCALE
+set throttle_limit_percent = 100
+
+rateprofile 3
+set rateprofile_name = unused
+
+# restore original rateprofile selection
+rateprofile 1
+
+
+# save configuration
+save
