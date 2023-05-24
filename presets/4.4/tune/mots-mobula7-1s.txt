@@ -91,7 +91,12 @@ set feedforward_jitter_factor = 5
 set feedforward_boost = 18
 set feedforward_max_rate_limit = 95
 
+#4.5
+#set angle_p_gain = 100
+#set angle_limit = 60
+#4.4
 set angle_level_strength = 100
+set level_limit = 60
 set horizon_level_strength = 100
 
 set p_pitch = 116

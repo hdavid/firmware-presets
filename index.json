@@ -3627,7 +3627,7 @@
     },
     {
       "fullPath": "presets/4.4/bnf/mots-tinywhoops.txt",
-      "hash": "fad1eaf3a3ada3f028c2548b3936f3bfc9e015d83665285208b1e3a43b405e42",
+      "hash": "1abe8915f2312e26e2e8b02c53955094729a245f4629497c3bfa536d263457da",
       "title": "mots TinyWhoops",
       "firmware_version": [
         "4.4"
@@ -4141,7 +4141,7 @@
     },
     {
       "fullPath": "presets/4.4/tune/mots-mobula7-1s.txt",
-      "hash": "5f1c603847f692b8d4e27a16acae43215e07b933c44c2688ea249058c1844973",
+      "hash": "e6f4c4b4239405d32e49854af0a252199f71017347a04327f7996bae4a191565",
       "title": "Mobula7 1s",
       "firmware_version": [
         "4.4"
@@ -4159,7 +4159,7 @@
     },
     {
       "fullPath": "presets/4.4/tune/mots-mobula7-2s.txt",
-      "hash": "3841b24b32b72baba68a32884beb963d395447656ee9c0c32ec980289067c6e9",
+      "hash": "042af95ee49541a011ecee0723bc175e0f8a5179cd061150061921f726a7524d",
       "title": "Mobula7 2s",
       "firmware_version": [
         "4.4"

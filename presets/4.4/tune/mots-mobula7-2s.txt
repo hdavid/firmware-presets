@@ -43,8 +43,8 @@ set dterm_lpf2_static_hz = 0
 set yaw_lowpass_hz = 0
 
 #4.5
-set angle_p_gain = 40
-set angle_limit = 45
+#set angle_p_gain = 40
+#set angle_limit = 45
 #4.4
 set angle_level_strength = 40
 set level_limit = 45
@@ -63,8 +63,8 @@ set yaw_lowpass_hz = 0
 
 
 #4.5
-set angle_p_gain = 75
-set angle_limit = 60
+#set angle_p_gain = 75
+#set angle_limit = 60
 #4.4
 set angle_level_strength = 75
 set level_limit = 60
@@ -98,8 +98,8 @@ set dterm_lpf2_static_hz = 0
 set yaw_lowpass_hz = 0
 
 #4.5
-set angle_p_gain = 100
-set angle_limit = 60
+#set angle_p_gain = 100
+#set angle_limit = 60
 #4.4
 set angle_level_strength = 100
 set level_limit = 60
