@@ -7,8 +7,6 @@
 
 #$ DESCRIPTION: 
 
-#$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/291
-
 
 # Filters
 set pid_process_denom = 1

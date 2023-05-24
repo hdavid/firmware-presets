@@ -13,9 +13,6 @@
 #$ DESCRIPTION: 3 Profiles: relax, normal, tight.
 
 
-#$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/291
-
-
 # Filters
 set pid_process_denom = 1
 set simplified_gyro_filter = OFF
