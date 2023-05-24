@@ -360,7 +360,7 @@
       "meteor",
       "MinChan",
       "MM",
-      "Mobula 2S ELRS _mots",
+      "Mobula",
       "mode",
       "modes",
       "Motor",
@@ -460,12 +460,14 @@
       "tiny",
       "tiny tank",
       "TinyTrainer",
+      "TinyWhoop",
       "toothpic",
       "Toothpick",
       "Tracer",
       "trainer",
       "tramp",
       "transmitter",
+      "Trashcan",
       "Tune",
       "twig",
       "tx5m.1",
@@ -3627,7 +3629,7 @@
     },
     {
       "fullPath": "presets/4.4/bnf/mots-tinywhoops.txt",
-      "hash": "1abe8915f2312e26e2e8b02c53955094729a245f4629497c3bfa536d263457da",
+      "hash": "2d91f0b25cd36239d13b959c98c0c6078a557d4fac46020e2e07cb8d817da732",
       "title": "mots TinyWhoops",
       "firmware_version": [
         "4.4"
@@ -3635,7 +3637,13 @@
       "category": "BNF",
       "status": "COMMUNITY",
       "keywords": [
-        "Mobula 2S ELRS _mots"
+        "Mobula",
+        "1S",
+        "2S",
+        "ELRS",
+        "Whoop",
+        "TinyWhoop",
+        "Trashcan"
       ],
       "author": "mots",
       "force_options_review": true,

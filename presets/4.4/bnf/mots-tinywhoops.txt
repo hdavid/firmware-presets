@@ -2,7 +2,7 @@
 #$ FIRMWARE_VERSION: 4.4
 #$ CATEGORY: BNF
 #$ STATUS: COMMUNITY
-#$ KEYWORDS: Mobula 2S ELRS _mots
+#$ KEYWORDS: Mobula, 1S, 2S, ELRS, Whoop, TinyWhoop, Trashcan
 #$ AUTHOR: mots
 #$ DISCUSSION: https://github.com/hdavid/firmware-presets
 #$ DESCRIPTION:  Mobula7 1S / Trashcan 2S
