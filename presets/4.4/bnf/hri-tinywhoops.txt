@@ -46,10 +46,10 @@ set small_angle = 180
         # Default value: 0
         # 0=500Hz,1=250Hz,2=150Hz,3=50Hz,4=25Hz
     #$ OPTION END
-    #$ OPTION BEGIN (CHECKED): SPI ELRS 250hz
+    #$ OPTION BEGIN (UNCHECKED): SPI ELRS 250hz
        set expresslrs_rate_index = 1
     #$ OPTION END
-    #$ OPTION BEGIN (CHECKED): SPI ELRS 150hz
+    #$ OPTION BEGIN (UNCHECKED): SPI ELRS 150hz
        set expresslrs_rate_index = 2
     #$ OPTION END
     #$ OPTION BEGIN (CHECKED): ELRS Bind Phrase: Mots
