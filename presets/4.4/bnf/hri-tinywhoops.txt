@@ -30,30 +30,38 @@ set small_angle = 180
 
 # RC
 #$ OPTION_GROUP BEGIN: Receiver
-    #$ OPTION BEGIN (CHECKED): SPI ELRS 500hz
+    #$ OPTION BEGIN (CHECKED): SPI ELRS
         resource RX_SPI_BIND 1 B02
         feature RX_SPI
         feature -RX_SERIAL
         beacon RX_LOST
         beacon RX_SET
+        set min_check = 1000
+        set max_check = 2000
+        set rc_smoothing_auto_factor = 45
+    #$ OPTION END
+    #$ OPTION BEGIN (CHECKED): SPI ELRS 500hz
         set expresslrs_rate_index = 0
         # Allowed range: 0 – 4
         # Default value: 0
         # 0=500Hz,1=250Hz,2=150Hz,3=50Hz,4=25Hz
-        set min_check = 1000
-        set max_check = 2000
-        set rc_smoothing_auto_factor = 45
+    #$ OPTION END
+    #$ OPTION BEGIN (CHECKED): SPI ELRS 250hz
+       set expresslrs_rate_index = 1
+    #$ OPTION END
+    #$ OPTION BEGIN (CHECKED): SPI ELRS 150hz
+       set expresslrs_rate_index = 2
     #$ OPTION END
     #$ OPTION BEGIN (CHECKED): ELRS Bind Phrase: Mots
         set expresslrs_uid = 21,19,5,147,134,168
     #$ OPTION END
 #$ OPTION_GROUP END
 
+
 # ESC
 feature -AIRMODE
 feature MOTOR_STOP
 set yaw_motors_reversed = ON
-set dshot_idle_value = 700
 set dshot_bidir = ON
 set dshot_bitbang = AUTO
 set motor_pwm_protocol = DSHOT300
@@ -72,23 +80,31 @@ set report_cell_voltage = ON
 
 #$ OPTION_GROUP BEGIN: Aircraft
     #$ OPTION BEGIN (CHECKED): Mobula7 2S
-        set craft_name = Mobula 2S 
+        set craft_name = Mobula 2S
+        
+        #$ INCLUDE: presets/4.4/tune/mots-mobula7-2s.txt
+        
         #BMI GYRO
         set gyro_1_sensor_align = DEFAULT
         #set gyro_1_sensor_align = CW0
+        
         set acc_calibration = -105,16,10,1
         
     #$ OPTION END
     
     #$ OPTION BEGIN (UNCHECKED): Mobula7 1S
         set craft_name = Mobula7 1S
+        
+        #$ INCLUDE: presets/4.4/tune/mots-mobula7-1s.txt
+        
         #ECM GYRO
         set gyro_1_sensor_align = CW90
         set gyro_1_align_yaw = 900
+        
+        set acc_calibration = -38,70,17,1
 
     #$ OPTION END
 #$ OPTION_GROUP END
-
 
 # save configuration
 save
