@@ -118,7 +118,7 @@ set simplified_d_gain = 160
 
 
 # restore original profile selection
-profile 1
+profile 2
 
 
 rateprofile 0
