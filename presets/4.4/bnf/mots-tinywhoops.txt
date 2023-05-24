@@ -102,7 +102,7 @@ set report_cell_voltage = ON
         set gyro_1_align_yaw = 900
         set pid_process_denom = 2
         
-        set acc_calibration = -38,70,17,1
+        set acc_calibration = -6,-39,2,1
 
     #$ OPTION END
 #$ OPTION_GROUP END
