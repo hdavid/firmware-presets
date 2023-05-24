@@ -104,6 +104,9 @@ set report_cell_voltage = ON
         set pid_process_denom = 2
         
         set acc_calibration = -6,-39,2,1
+        
+        # increase idle value for bluejay 48kHz on 1s
+        set dshot_idle_value = 1300
 
     #$ OPTION END
 #$ OPTION_GROUP END
